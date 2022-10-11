@@ -1,0 +1,17 @@
+dynaconf
+flask
+flask-admin
+flask-migrate
+flask-sqlalchemy
+
+[dev]
+black
+flake8
+flask-debugtoolbar
+flask-shell-ipython
+ipdb
+ipython
+isort
+pytest
+pytest-cov
+pytest-flask
