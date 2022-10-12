@@ -13,7 +13,6 @@ EXTENSIONS = [
 
 [development]
 DEBUG = true
-SECRET_KEY = '\x07|x$\xe8\xe5\xee\xfc\xba\xd3\x85@\xd7\xfc\x07:'
 SQLALCHEMY_DATABASE_URI = 'sqlite:///delivery.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = false
 DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
