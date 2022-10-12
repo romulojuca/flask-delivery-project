@@ -7,3 +7,4 @@ from delivery.app import create_app
 def app():
     """Instance of Main Flask App"""
     return create_app()
+
