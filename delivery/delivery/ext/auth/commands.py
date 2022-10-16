@@ -1,6 +1,6 @@
 import click
 from delivery.ext.auth.models import User
-from delivery.ext.db import db
+from delivery.ext.auth.controller import create_user
 
 
 def list_users():
@@ -13,12 +13,10 @@ def list_users():
 @click.option("--admin", "-a", is_flag=True, default=False)
 def add_user(email, passwd, admin):
     """adiciona novo usuario"""
-    user = User(
-        email=email, 
-        passwd=passwd, 
+    # TODO: tratar User Exists exception
+    user = create_user(
+        email=email,
+        password=passwd,
         admin=admin
     )
-    db.session.add(user)
-    db.session.commit()
-
     click.echo(f"Usuário {email} criado com sucesso!")
