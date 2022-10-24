@@ -18,6 +18,8 @@ delivery/ext/api/__init__.py
 delivery/ext/auth/__init__.py
 delivery/ext/auth/admin.py
 delivery/ext/auth/commands.py
+delivery/ext/auth/controller.py
+delivery/ext/auth/form.py
 delivery/ext/auth/models.py
 delivery/ext/db/__init__.py
 delivery/ext/db/commands.py
